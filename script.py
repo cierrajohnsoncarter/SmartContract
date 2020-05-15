@@ -15,7 +15,7 @@ address = '0xd26114cd6EE289AccF82350c8d8487fedB8A0C07'
 contract = web3.eth.contract(address=address, abi=abi)
 print(contract)
 
-# See how many tokens there are and convert them from we to ether
+# See how many tokens there are and convert them from wei to ether
 totalSupply = contract.functions.totalSupply().call()
 print(web3.fromWei(totalSupply, 'ether'))
 
